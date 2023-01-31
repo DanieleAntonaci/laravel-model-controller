@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function home() {
+    public function index() {
 
         return view('pages.app');
     }
