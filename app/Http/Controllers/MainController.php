@@ -13,6 +13,6 @@ class MainController extends Controller
         $data= [
             'movies'=> $movies
         ];
-        return view('pages.app');
+        return view('pages.app', $data);
     }
 }

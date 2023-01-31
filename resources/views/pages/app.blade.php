@@ -2,7 +2,25 @@
 
 @section('name-film')
     <h1>name films</h1>
-    @foreach ($movies as $movie)
-        {{$movie-> title}}
-    @endforeach
+    <ul>
+        @foreach ($movies as $movie)
+        <li>
+            <h2>
+                {{$movie-> title}}
+            </h2>
+            <h3>
+                {{$movie-> original_title}}
+            </h3>
+            <div>
+                {{$movie-> nationality}}
+            </div>
+            <div>
+                {{$movie-> date}}
+            </div>
+            <div>
+                {{$movie-> vote}}
+            </div>
+        </li>
+        @endforeach
+    </ul>
 @endsection
